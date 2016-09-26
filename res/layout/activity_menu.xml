@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+
+    <!-- Included header.xml here -->
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="50dip" 
+		android:layout="@layout/header" />
+
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:padding="6dip"
+	    android:background="@drawable/bg">
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1">
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnDictionaryClick"
+	            android:text="@string/dictionary"
+	            android:drawableTop="@drawable/btn_dictionary"/>
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnMiniGamesClick"
+	            android:text="@string/minigames"
+	            android:drawableTop="@drawable/btn_game"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1">
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnSettingClick"
+	            android:text="@string/setting"
+	            android:drawableTop="@drawable/btn_setting"/>
+	    </LinearLayout>   
+	</LinearLayout>
+	
+</LinearLayout>  

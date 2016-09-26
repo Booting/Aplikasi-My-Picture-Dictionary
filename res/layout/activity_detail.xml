@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+
+    <!-- Included header.xml here -->
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="50dip" 
+		android:layout="@layout/header" />
+
+	<ScrollView android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:padding="15dip"
+		android:background="@drawable/bg">
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+		<ImageView android:layout_width="256dip"
+	      	android:layout_height="256dip"
+	      	android:layout_marginTop="10dip"
+	      	android:layout_marginLeft="10dip"
+	      	android:layout_marginRight="10dip"
+	      	android:contentDescription="@string/action_settings"
+	      	android:id="@+id/txtImage" />
+		
+		<TextView android:textSize="@dimen/big_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:paddingTop="10dip"
+	      	android:paddingLeft="10dip"
+	      	android:paddingRight="10dip"
+	      	android:textStyle="bold"
+	      	android:typeface="serif"
+	      	android:id="@+id/txtIndonesia" />
+		
+		<TextView android:textSize="@dimen/big_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:paddingTop="10dip"
+	      	android:paddingLeft="10dip"
+	      	android:paddingRight="10dip"
+	      	android:textStyle="bold"
+	      	android:typeface="serif"
+	      	android:id="@+id/txtEnglish" />
+			
+		<LinearLayout android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dip"
+		    android:gravity="center" >
+
+		    <Button android:layout_width="50dip"
+		        android:layout_height="match_parent"
+		        android:background="@drawable/btn_arrow_left"
+		        android:onClick="btnPrevClick" />
+
+		    <Button style="@style/btnStyleSeagull" android:text="@string/playsound" 
+		      	android:onClick="btnPlaySoundClick" android:layout_width="150dip"/>
+		    
+		    <Button android:layout_width="50dip"
+		        android:layout_height="match_parent"
+		        android:background="@drawable/btn_arrow_right"
+		        android:onClick="btnNextClick" />
+	    </LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+	
+</LinearLayout>  

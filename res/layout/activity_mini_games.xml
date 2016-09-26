@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+
+    <!-- Included header.xml here -->
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="50dip" 
+		android:layout="@layout/header" />
+
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:padding="6dip"
+	    android:background="@drawable/bg">
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1">
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnLevelOneClick"
+	            android:drawableTop="@drawable/number_one"/>
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnLevelTwoClick"
+	            android:drawableTop="@drawable/number_two"/>
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnLevelThreeClick"
+	            android:drawableTop="@drawable/number_three"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1">
+	        <Button style="@style/HomeButton"
+	            android:drawableTop="@drawable/number_four"/>
+	        <Button style="@style/HomeButton"
+	            android:drawableTop="@drawable/number_five"/>
+	        <Button style="@style/HomeButton"
+	            android:drawableTop="@drawable/number_six"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1">
+	        <Button style="@style/HomeButton"
+	            android:drawableTop="@drawable/number_seven"/>
+	        <Button style="@style/HomeButton"
+	            android:drawableTop="@drawable/number_eight"/>
+	        <Button style="@style/HomeButton"
+	            android:drawableTop="@drawable/number_nine"/>
+	    </LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>  

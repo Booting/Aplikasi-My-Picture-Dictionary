@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+
+    <!-- Included header.xml here -->
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="50dip" 
+		android:layout="@layout/header" />
+
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:padding="6dip"
+	    android:background="@drawable/bg">
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1">
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnAnimalClick"
+	            android:text="@string/animal"
+	            android:drawableTop="@drawable/btn_animal"/>
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnPlantClick"
+	            android:text="@string/fooddrink"
+	            android:drawableTop="@drawable/btn_fooddrink"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1">
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnNumberClick"
+	            android:text="@string/number"
+	            android:drawableTop="@drawable/btn_number"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1">
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnTransportationClick"
+	            android:text="@string/transportation"
+	            android:drawableTop="@drawable/btn_transportation"/>
+	        <Button style="@style/HomeButton"
+	            android:onClick="btnColorClick"
+	            android:text="@string/color"
+	            android:drawableTop="@drawable/btn_color"/>
+	    </LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>  

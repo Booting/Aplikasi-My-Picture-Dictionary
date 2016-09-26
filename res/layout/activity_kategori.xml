@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+
+    <!-- Included header.xml here -->
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="50dip" 
+		android:layout="@layout/header" />
+
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:id="@+id/isi"
+		android:background="@drawable/bg" >
+		<TextView android:id="@+id/textLand"
+		    android:textSize="@dimen/big_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:paddingTop="10dip"
+	      	android:paddingLeft="10dip"
+	      	android:paddingRight="10dip"
+	      	android:textStyle="bold"
+	      	android:typeface="serif"
+	      	android:text="@string/land" />
+		<ListView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		  	android:id="@+id/lsvListLand"
+		  	android:layout_marginLeft="10dip"
+		  	android:layout_marginRight="10dip"
+		  	android:cacheColorHint="#00000000" >
+	   	</ListView>   
+	   	<TextView android:id="@+id/txtNoDataLand"
+	      	android:textSize="@dimen/medium_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:text="@string/nodata"
+	      	android:layout_marginLeft="25dip"
+		  	android:layout_marginRight="10dip"/> 
+			
+		<TextView android:id="@+id/textAir"
+		    android:textSize="@dimen/big_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:paddingTop="10dip"
+	      	android:paddingLeft="10dip"
+	      	android:paddingRight="10dip"
+	      	android:textStyle="bold"
+	      	android:typeface="serif"
+	      	android:text="@string/air" />
+		<ListView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		  	android:id="@+id/lsvListAir"
+		  	android:layout_marginLeft="10dip"
+		  	android:layout_marginRight="10dip"
+		  	android:cacheColorHint="#00000000" >
+	   	</ListView>   
+	   	<TextView android:id="@+id/txtNoDataAir"
+	      	android:textSize="@dimen/medium_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:text="@string/nodata"
+	      	android:layout_marginLeft="25dip"
+		  	android:layout_marginRight="10dip"/>
+			
+		<TextView android:id="@+id/textSea" 
+		    android:textSize="@dimen/big_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:paddingTop="10dip"
+	      	android:paddingLeft="10dip"
+	      	android:paddingRight="10dip"
+	      	android:textStyle="bold"
+	      	android:typeface="serif"
+	      	android:text="@string/sea" />
+		<ListView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		  	android:id="@+id/lsvListSea"
+		  	android:layout_marginLeft="10dip"
+		  	android:layout_marginRight="10dip"
+		  	android:layout_marginBottom="10dip"
+		  	android:cacheColorHint="#00000000" >
+	   	</ListView>   		      
+	   	<TextView android:id="@+id/txtNoDataSea"
+	      	android:textSize="@dimen/medium_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:text="@string/nodata"
+	      	android:layout_marginLeft="25dip"
+		  	android:layout_marginRight="10dip"
+		  	android:layout_marginBottom="10dip"/>
+	   	
+	   	<ListView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		  	android:id="@+id/lsvListOther"
+		  	android:layout_marginLeft="10dip"
+		  	android:layout_marginRight="10dip"
+		  	android:layout_marginBottom="10dip"
+		  	android:cacheColorHint="#00000000"
+		  	android:visibility="gone" >
+	   	</ListView>   		      
+	   	<TextView android:id="@+id/txtNoDataOther"
+	      	android:textSize="@dimen/medium_text"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="#FFF"
+	      	android:text="@string/nodata"
+	      	android:layout_marginLeft="25dip"
+		  	android:layout_marginRight="10dip"
+		  	android:layout_marginBottom="10dip"
+		  	android:visibility="gone"/>
+	</LinearLayout>
+	
+</LinearLayout>  
